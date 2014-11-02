@@ -55,10 +55,12 @@
     it = sin(it * M_PI * 2.f);
     ms = sin(ms * M_PI * 2.f);
     
+    /*
     NSLog(@"Physical state: %f", ph);
     NSLog(@"Emotional state: %f", em);
     NSLog(@"Intelligent state: %f", it);
     NSLog(@"Mystical state: %f", ms);
+     */
     
     if(ph > 0) {
         [physics setTintColor:[UIColor greenColor]];

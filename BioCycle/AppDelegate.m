@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setupTheme];
     return YES;
 }
 
@@ -40,6 +41,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)setupTheme
+{
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.125f green:0.13f blue:0.06f alpha:1.f]];
+    [[UITabBar appearance] setTintColor:[UIColor redColor]];
 }
 
 @end

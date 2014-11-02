@@ -17,6 +17,7 @@
 		5108C0101A068E6A0088A3CA /* BioCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108C00F1A068E6A0088A3CA /* BioCycleTests.m */; };
 		5108C01B1A06A1F20088A3CA /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 5108C0191A06A1F20088A3CA /* iTunesArtwork */; };
 		5108C01C1A06A1F20088A3CA /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 5108C01A1A06A1F20088A3CA /* iTunesArtwork@2x */; };
+		5108C01F1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108C01E1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		5108C00F1A068E6A0088A3CA /* BioCycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BioCycleTests.m; sourceTree = "<group>"; };
 		5108C0191A06A1F20088A3CA /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		5108C01A1A06A1F20088A3CA /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		5108C01D1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WhiteUIDatePickerLabels.h"; sourceTree = "<group>"; };
+		5108C01E1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WhiteUIDatePickerLabels.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				5108C0001A068E6A0088A3CA /* Images.xcassets */,
 				5108C0021A068E6A0088A3CA /* LaunchScreen.xib */,
 				5108BFF01A068E690088A3CA /* Supporting Files */,
+				5108C01D1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.h */,
+				5108C01E1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m */,
 			);
 			path = BioCycle;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5108BFFC1A068E690088A3CA /* SecondViewController.m in Sources */,
+				5108C01F1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m in Sources */,
 				5108BFF61A068E690088A3CA /* AppDelegate.m in Sources */,
 				5108BFF91A068E690088A3CA /* FirstViewController.m in Sources */,
 				5108BFF31A068E690088A3CA /* main.m in Sources */,
