@@ -45,8 +45,13 @@
 
 -(void)setupTheme
 {
-    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.125f green:0.13f blue:0.06f alpha:1.f]];
-    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    if(NSFoundationVersionNumber >= NSFoundationVersionNumber_iOS_7_0) {
+        [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.125f green:0.13f blue:0.06f alpha:1.f]];
+        [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    } else {
+        // iOS 6
+        [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.125f green:0.13f blue:0.06f alpha:1.f]];
+    }
 }
 
 @end

@@ -61,34 +61,29 @@
     NSLog(@"Intelligent state: %f", it);
     NSLog(@"Mystical state: %f", ms);
      */
-    
-    if(ph > 0) {
-        [physics setTintColor:[UIColor greenColor]];
-        [physics setProgress:ph];
+
+    [self updateProgress:physics toValue:ph];
+    [self updateProgress:emotions toValue:em];
+    [self updateProgress:intelligence toValue:it];
+    [self updateProgress:mystical toValue:ms];
+}
+
+-(void)updateProgress:(UIProgressView*)progress toValue:(CGFloat)value
+{
+    if(value > 0) {
+        if(NSFoundationVersionNumber >= NSFoundationVersionNumber_iOS_7_0) {
+            [progress setTintColor:[UIColor greenColor]];
+        } else {
+            [progress setProgressTintColor:[UIColor greenColor]];
+        }
+        [progress setProgress:value];
     } else {
-        [physics setTintColor:[UIColor redColor]];
-        [physics setProgress:-ph];
-    }
-    if(em > 0) {
-        [emotions setTintColor:[UIColor greenColor]];
-        [emotions setProgress:em];
-    } else {
-        [emotions setTintColor:[UIColor redColor]];
-        [emotions setProgress:-em];
-    }
-    if(it > 0) {
-        [intelligence setTintColor:[UIColor greenColor]];
-        [intelligence setProgress:it];
-    } else {
-        [intelligence setTintColor:[UIColor redColor]];
-        [intelligence setProgress:-it];
-    }
-    if(ms > 0) {
-        [mystical setTintColor:[UIColor greenColor]];
-        [mystical setProgress:ms];
-    } else {
-        [mystical setTintColor:[UIColor redColor]];
-        [mystical setProgress:-ms];
+        if(NSFoundationVersionNumber >= NSFoundationVersionNumber_iOS_7_0) {
+            [progress setTintColor:[UIColor redColor]];
+        } else {
+            [progress setProgressTintColor:[UIColor redColor]];
+        }
+        [progress setProgress:-value];
     }
 }
 

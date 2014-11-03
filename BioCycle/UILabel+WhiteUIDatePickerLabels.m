@@ -23,9 +23,10 @@
 
 // Forces the text colour of the lable to be white only for UIDatePicker and its components
 -(void) swizzledSetTextColor:(UIColor *)textColor {
-    if([self view:self hasSuperviewOfClass:[UIDatePicker class]] ||
+    if(([self view:self hasSuperviewOfClass:[UIDatePicker class]] ||
        [self view:self hasSuperviewOfClass:NSClassFromString(@"UIDatePickerWeekMonthDayView")] ||
-       [self view:self hasSuperviewOfClass:NSClassFromString(@"UIDatePickerContentView")]){
+       [self view:self hasSuperviewOfClass:NSClassFromString(@"UIDatePickerContentView")]) &&
+       NSFoundationVersionNumber >= NSFoundationVersionNumber_iOS_7_0) {
         [self swizzledSetTextColor:[UIColor whiteColor]];
     } else {
         //Carry on with the default
