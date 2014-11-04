@@ -6,20 +6,21 @@
 //  Copyright (c) 2014 Vasiliy Makarov. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "SettingsViewController.h"
+#import "AppDelegate.h"
 
-@interface FirstViewController ()
+@interface SettingsViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation SettingsViewController
 
 @synthesize physics, emotions, intelligence, mystical, datePicker, today;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSDate *dd = [[NSUserDefaults standardUserDefaults] objectForKey:@"defaultDate"];
+    NSDate *dd = AppDelegate.instance.currentDate;
     if(dd) {
         [datePicker setDate:dd];
         [self processDate:dd];
@@ -34,7 +35,7 @@
 -(IBAction)selectDate:(UIDatePicker*)sender
 {
     [self processDate:sender.date];
-    [[NSUserDefaults standardUserDefaults] setObject:sender.date forKey:@"defaultDate"];
+    AppDelegate.instance.currentDate = sender.date;
 }
 
 -(void)processDate:(NSDate*)date

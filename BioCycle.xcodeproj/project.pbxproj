@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		5108BFF31A068E690088A3CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFF21A068E690088A3CA /* main.m */; };
 		5108BFF61A068E690088A3CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFF51A068E690088A3CA /* AppDelegate.m */; };
-		5108BFF91A068E690088A3CA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFF81A068E690088A3CA /* FirstViewController.m */; };
-		5108BFFC1A068E690088A3CA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFFB1A068E690088A3CA /* SecondViewController.m */; };
+		5108BFF91A068E690088A3CA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFF81A068E690088A3CA /* SettingsViewController.m */; };
+		5108BFFC1A068E690088A3CA /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108BFFB1A068E690088A3CA /* GraphViewController.m */; };
 		5108BFFF1A068E6A0088A3CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5108BFFD1A068E6A0088A3CA /* Main.storyboard */; };
 		5108C0011A068E6A0088A3CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5108C0001A068E6A0088A3CA /* Images.xcassets */; };
 		5108C0041A068E6A0088A3CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5108C0021A068E6A0088A3CA /* LaunchScreen.xib */; };
@@ -18,6 +18,8 @@
 		5108C01B1A06A1F20088A3CA /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 5108C0191A06A1F20088A3CA /* iTunesArtwork */; };
 		5108C01C1A06A1F20088A3CA /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 5108C01A1A06A1F20088A3CA /* iTunesArtwork@2x */; };
 		5108C01F1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 5108C01E1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m */; };
+		5115E5291A088B6A00F330B4 /* KorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5115E5281A088B6A00F330B4 /* KorePlot.framework */; };
+		5115E52B1A088BED00F330B4 /* KorePlot.framework in Resources */ = {isa = PBXBuildFile; fileRef = 5115E5281A088B6A00F330B4 /* KorePlot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,10 @@
 		5108BFF21A068E690088A3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5108BFF41A068E690088A3CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5108BFF51A068E690088A3CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5108BFF71A068E690088A3CA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		5108BFF81A068E690088A3CA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		5108BFFA1A068E690088A3CA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		5108BFFB1A068E690088A3CA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5108BFF71A068E690088A3CA /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5108BFF81A068E690088A3CA /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		5108BFFA1A068E690088A3CA /* GraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		5108BFFB1A068E690088A3CA /* GraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
 		5108BFFE1A068E6A0088A3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5108C0001A068E6A0088A3CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5108C0031A068E6A0088A3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		5108C01A1A06A1F20088A3CA /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		5108C01D1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WhiteUIDatePickerLabels.h"; sourceTree = "<group>"; };
 		5108C01E1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WhiteUIDatePickerLabels.m"; sourceTree = "<group>"; };
+		5115E5281A088B6A00F330B4 /* KorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KorePlot.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5115E5291A088B6A00F330B4 /* KorePlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 				5108C01A1A06A1F20088A3CA /* iTunesArtwork@2x */,
 				5108BFEF1A068E690088A3CA /* BioCycle */,
 				5108C00C1A068E6A0088A3CA /* BioCycleTests */,
+				5115E52A1A088B7200F330B4 /* Frameworks */,
 				5108BFEE1A068E690088A3CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,10 +100,10 @@
 			children = (
 				5108BFF41A068E690088A3CA /* AppDelegate.h */,
 				5108BFF51A068E690088A3CA /* AppDelegate.m */,
-				5108BFF71A068E690088A3CA /* FirstViewController.h */,
-				5108BFF81A068E690088A3CA /* FirstViewController.m */,
-				5108BFFA1A068E690088A3CA /* SecondViewController.h */,
-				5108BFFB1A068E690088A3CA /* SecondViewController.m */,
+				5108BFF71A068E690088A3CA /* SettingsViewController.h */,
+				5108BFF81A068E690088A3CA /* SettingsViewController.m */,
+				5108BFFA1A068E690088A3CA /* GraphViewController.h */,
+				5108BFFB1A068E690088A3CA /* GraphViewController.m */,
 				5108BFFD1A068E6A0088A3CA /* Main.storyboard */,
 				5108C0001A068E6A0088A3CA /* Images.xcassets */,
 				5108C0021A068E6A0088A3CA /* LaunchScreen.xib */,
@@ -133,6 +138,14 @@
 				5108C00E1A068E6A0088A3CA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5115E52A1A088B7200F330B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5115E5281A088B6A00F330B4 /* KorePlot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5115E52B1A088BED00F330B4 /* KorePlot.framework in Resources */,
 				5108C01C1A06A1F20088A3CA /* iTunesArtwork@2x in Resources */,
 				5108BFFF1A068E6A0088A3CA /* Main.storyboard in Resources */,
 				5108C0041A068E6A0088A3CA /* LaunchScreen.xib in Resources */,
@@ -238,10 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5108BFFC1A068E690088A3CA /* SecondViewController.m in Sources */,
+				5108BFFC1A068E690088A3CA /* GraphViewController.m in Sources */,
 				5108C01F1A06B14F0088A3CA /* UILabel+WhiteUIDatePickerLabels.m in Sources */,
 				5108BFF61A068E690088A3CA /* AppDelegate.m in Sources */,
-				5108BFF91A068E690088A3CA /* FirstViewController.m in Sources */,
+				5108BFF91A068E690088A3CA /* SettingsViewController.m in Sources */,
 				5108BFF31A068E690088A3CA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,8 +379,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BioCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -376,8 +395,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BioCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

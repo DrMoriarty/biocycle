@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KorePlot/KorePlot.h>
 
-@interface SecondViewController : UIViewController
+@interface GraphViewController : UIViewController <KPPlotDelegate>
 
+@property (nonatomic, strong) IBOutlet KPPlotView* plot;
 
 @end
 

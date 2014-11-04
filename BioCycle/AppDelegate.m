@@ -14,6 +14,21 @@
 
 @implementation AppDelegate
 
++(AppDelegate*)instance
+{
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+
+-(void)setCurrentDate:(NSDate *)currentDate
+{
+    [[NSUserDefaults standardUserDefaults] setObject:currentDate forKey:@"defaultDate"];
+}
+
+-(NSDate*)currentDate
+{
+    NSDate *dd = [[NSUserDefaults standardUserDefaults] objectForKey:@"defaultDate"];
+    return dd;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

@@ -1,0 +1,6 @@
+framework module KorePlot {
+  umbrella header "KorePlot.h"
+
+  export *
+  module * { export * }
+}

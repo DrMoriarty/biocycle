@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface SettingsViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIProgressView *physics;
 @property (nonatomic, strong) IBOutlet UIProgressView *emotions;
