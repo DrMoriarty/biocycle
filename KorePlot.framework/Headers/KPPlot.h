@@ -45,7 +45,7 @@ typedef enum {KPPlotPointX = 0, KPPlotPointY, KPPlotPointMin, KPPlotPointMax} KP
 
 @optional
 -(BOOL)update:(CGFloat)dt;
--(void)startAnimation;
+-(void)startAnimationWithDelay:(CGFloat)delay;
 -(void)reloadData;
 
 @end

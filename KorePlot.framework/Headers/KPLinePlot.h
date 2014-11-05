@@ -23,7 +23,7 @@ typedef enum {KPPlotLineTypeSolid = 0, KPPlotLineTypeDot, KPPlotLineTypeDash, KP
 @property (nonatomic, assign) KPPlotLineType lineType;
 
 -(id)initWithIdentifier:(NSString*)identifier andDelegate:(id<KPPlotDelegate>)delegate;
--(void)startAnimation;
+-(void)startAnimationWithDelay:(CGFloat)delay;
 -(BOOL)update:(CGFloat)dt;
 -(void)drawInContext:(CGContextRef)ctx withXScale:(CGFloat)xscale andYScale:(CGFloat)yscale;
 -(void)drawLabelsInContext:(CGContextRef)ctx withXScale:(CGFloat)xscale andYScale:(CGFloat)yscale;

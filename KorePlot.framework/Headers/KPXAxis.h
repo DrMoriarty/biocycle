@@ -27,10 +27,13 @@
 @property (nonatomic, readonly) NSString* identifier;
 @property (nonatomic, assign) CGFloat size;
 @property (nonatomic, strong) UIColor *axisColor;
+@property (nonatomic, assign) BOOL drawGrid;
+@property (nonatomic, assign) CGFloat gridStep;
 
 -(id)initWithIdentifier:(NSString*)identifier andDelegate:(id<KPAxisDelegate>)delegate;
 -(void)drawInContext:(CGContextRef)ctx withXScale:(CGFloat)xscale andYScale:(CGFloat)yscale;
 -(void)drawLabelsInContext:(CGContextRef)ctx withXScale:(CGFloat)xscale andYScale:(CGFloat)yscale;
+-(void)drawGridInContext:(CGContextRef)ctx withXScale:(CGFloat)xscale andYScale:(CGFloat)yscale;
 -(void)reloadData;
 
 @end

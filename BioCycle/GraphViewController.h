@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <KorePlot/KorePlot.h>
 
-@interface GraphViewController : UIViewController <KPPlotDelegate>
+@interface GraphViewController : UIViewController <KPPlotDelegate, KPAxisDelegate>
 
 @property (nonatomic, strong) IBOutlet KPPlotView* plot;
+@property (nonatomic, strong) IBOutlet KPPlotView* plot2;
 
 @end
 
